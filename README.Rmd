@@ -48,23 +48,24 @@ wb_sf <- get_wb_sf("OC","<water_body_name>")
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-# Documentation
+## Documentation
 
 For more information on the package and its functions, you can refer to the package documentation:
 
-```{r}
+```{r, eval=FALSE}
 
-?environspdata
+?eaCatcheR
 
 ```
 
-# Contributing
+## Contributing
 
 We welcome contributions to the package! If you would like to contribute, please fork the repository and create a pull request.
-Data Source
+
+## Data Source
 
 The data for this package comes from the environment.data.gov.uk website, which is maintained by the UK government. The website provides access to a range of environmental data and information, including information on water bodies and water quality.
 
-# Contact
+## Contact
 
 For questions or support, please open an issue on the GitHub repository or contact the package maintainer at nathanaelsheehan@gmail.com
