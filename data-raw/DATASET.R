@@ -1,13 +1,16 @@
-## EA wbid raw data from EA catchment explorer
-aa = read.csv("data-raw/WB_GB70810015_classifications.csv") |>
-  dplyr::rename(
-    RBD = River.Basin.District,
-    OC = Operational.Catchment,
-    name = Water.Body,
-    WBID = Water.Body.ID,
-    MC = Management.Catchment
-  )
-ea_wbid_raw_data = unique(aa[4])
+## EA wbid raw data from EA catchment explorer - REDUCE SIZE OF DATASET TO STORE IT IN r
+# aa = read.csv("../../Downloads/England_classifications.csv") |>
+#   dplyr::rename(
+#     RBD = River.Basin.District,
+#     OC = Operational.Catchment,
+#     name = Water.Body,
+#     WBID = Water.Body.ID,
+#     MC = Management.Catchment
+#   )
+# saveRDS(aa,"data-raw/England_classifications.rds")
+
+aa = readRDS("data-raw/England_classifications.rds")
+ea_wbid_raw_data = distinct(aa,WBID,.keep_all = TRUE)
 usethis::use_data(ea_wbid_raw_data, overwrite = TRUE)
 
 ## Reasons Dataframe
