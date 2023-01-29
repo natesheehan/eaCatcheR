@@ -4,8 +4,6 @@
 #' @param column CLASSIFICATION TYPE E.G. OC | MC | RBD
 #' @return Spatial dataframe
 
-
-
 get_wb_sf = function(string, #### STRING = NAME OF CLASSFICATION AREA E.G. RIVER TILL
                      column) #### COLUMN  = CLASSIFICATION TYPE E.G. OC | MC | RBD
 {
