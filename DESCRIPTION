@@ -1,0 +1,19 @@
+Package: eaCatcheR
+Type: Package
+Title: Download Spatial and Ecological Data From The Environment Agency
+Version: 0.1.0
+Author: Nathanael Sheehan
+Maintainer: Nathanael Sheehan <nathanaelsheehan@gmail.com>
+Description: Functions to connect with the EA API.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    sf,
+    dplyr
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.2.0
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
